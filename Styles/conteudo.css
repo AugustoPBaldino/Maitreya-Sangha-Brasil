@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0;
@@ -46,15 +44,23 @@ header {
     font-size: 1.75rem;
     font-weight: bold;
 }
-
-/* Navbar */
+ /* Navbar */
 nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.nav-center {
     flex-grow: 1;
     display: flex;
     justify-content: center; 
+    padding-left: 270px;
 }
 
-nav ul {
+.nav-center ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -62,81 +68,45 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
+.nav-center ul li {
     margin: 0 1.5rem;
 }
 
-nav ul li a {
+.nav-center ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     transition: background 0.3s, color 0.3s;
+    font-weight: bolder;
+    border-radius: 25px;
+
 }
 
-nav ul li a:hover {
-    background: #555;
-    color: #ff5722;
-    border-radius: 5px;
+.nav-center ul li a:hover {
+    background: #406399;
+    /* background: #DD3117; */
+    border-radius: 25px;
 }
 
-/* ----------------------------------- */
-/* Seção Home */
-/* ----------------------------------- */
-
-.home {
-    position: relative;
-    height: 100vh;
-    background-image: url('assets/Paisage_Home.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
+.nav-right {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem;
+    align-items: center;
 }
 
-.home h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+.nav-right p{
+    margin-right: 10px;
 }
-
-.home p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #ff5722;
+.nav-right a {
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s;
+    margin-right: 1rem;
 }
 
-.cta-button:hover {
-    background: #e64a19;
-}
-
-/* ----------------------------------- */
-/* Seção Sobre Nós */
-/* ----------------------------------- */
-
-#about {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-#about p {
-    justify-content: center;
-    padding: 100px;
-    align-items: center;
-    font-size: 25px;
+.nav-right img {
+    width: 50px;
+    height: 50px;
+    margin: rem;
 }
 
 /* ----------------------------------- */
@@ -261,106 +231,10 @@ iframe {
     justify-content: center;
 }
 
-.swiper-button-next,
-        .swiper-button-prev {
+.swiper-button-next,.swiper-button-prev {
             color: #000;
             font-size: 1.5rem;
         }
-
-/* ----------------------------------- */
-/* Seção Lama Glenn Mullin */
-/* ----------------------------------- */
-
-#mentor-section {
-    padding: 40px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-width: 1500px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.mentor-info {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
-    margin-bottom: 20px; /* Espaçamento entre as seções */
-}
-
-.image-container {
-    flex: 0 0 40%;
-    margin-right: 30px;
-}
-
-.image-container img {
-    width: 400px; /* Tamanho das imagens */
-    height: auto;
-    border-radius: 8px; /* Bordas arredondadas, opcional */
-    margin-bottom: 10px; 
-    margin-top: 10px;
-}
-
-.text-container {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: justify;
-    margin-left: 20px;
-}
-
-
-
-.text-container p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    text-indent: 20px; /* Recuo no início do parágrafo para maior legibilidade */
-}
-
-
-.mentor-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.mentor-info p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    text-align: justify;
-    text-indent: 20px;
-}
-
-figure {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-figcaption {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 5px;
-}
-
-/* Seções */
-section {
-    padding: 4rem 2rem;
-    text-align: center;
-}
 
 /* ----------------------------------- */
 /* Seção Livros */
@@ -428,6 +302,12 @@ section {
 
 .book-info button:hover {
     background-color: #0056b3;
+}
+
+/* Seções */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
 /* Rodapé */
