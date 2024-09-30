@@ -35,6 +35,9 @@ header {
     left: 2rem; 
     display: flex;
     align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 5px;
 }
 
 .logo img {
@@ -53,6 +56,10 @@ nav {
     align-items: center;
     padding: 0 20px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #333333;
+    height: 80px;
 }
 
 .nav-center {
@@ -64,14 +71,15 @@ nav {
 
 .nav-center ul {
     list-style: none;
-    padding: 0;
+    padding: 20px 0px 0px;
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center; /* add this line */
 }
 
 .nav-center ul li {
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
 .nav-center ul li a {
@@ -88,12 +96,13 @@ nav {
 .nav-center ul li a:hover {
     background: #406399;
     /* background: #DD3117; */
-    border-radius: 25px;
+
 }
 
 .nav-right {
     display: flex;
     align-items: center;
+    padding: 20px 0px 0px;
 }
 
 .nav-right p{
@@ -107,9 +116,10 @@ nav {
 }
 
 .nav-right img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: rem;
+    align-items: center;
 }
 
 /* ----------------------------------- */

@@ -33,6 +33,9 @@ header {
     left: 2rem; 
     display: flex;
     align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 5px;
 }
 
 .logo img {
@@ -41,7 +44,7 @@ header {
 }
 
 .logo span {
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-weight: bold;
 }
  /* Navbar */
@@ -51,6 +54,10 @@ nav {
     align-items: center;
     padding: 0 20px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #414141;
+    height: 80px;
 }
 
 .nav-center {
@@ -62,25 +69,55 @@ nav {
 
 .nav-center ul {
     list-style: none;
-    padding: 0;
+    padding: 20px 0px 0px;
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center; /* add this line */
 }
 
 .nav-center ul li {
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
 .nav-center ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem 1rem;
     transition: background 0.3s, color 0.3s;
     font-weight: bolder;
     border-radius: 25px;
 
+}
+
+.nav-center ul li a:hover {
+    background: #406399;
+    /* background: #DD3117; */
+
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px;
+}
+
+.nav-right p{
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.nav-right img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.75rem;
+    align-items: center;
 }
 
 .nav-center ul li a:hover {
@@ -127,11 +164,11 @@ nav {
     width: 100%;
     max-width: 560px;
     margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+
 }
 
 iframe {
     width: 100%;
-    height: 315px;
     display: block;
     border: none; /* Remove a borda */
 }
