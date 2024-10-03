@@ -297,7 +297,7 @@ iframe {
 }
 
 .book-card img {
-    width: 200px; /* Define a largura da imagem */
+    width: 300px; /* Define a largura da imagem */
     border-radius: 10px;
     object-fit: cover;
 }
