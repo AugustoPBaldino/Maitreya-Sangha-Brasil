@@ -321,7 +321,7 @@ iframe {
 
 #books {
     margin: 20px;
-    text-align: left;
+    text-align: center; /* Centraliza o texto dentro da seção */
 }
 
 .book-card {
@@ -344,17 +344,17 @@ iframe {
 }
 
 .book-info {
-    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os itens ao início do eixo transversal */
 }
+
 
 .book-info h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    align-items: center;
 }
+
 
 .book-info p {
     font-size: 1rem;
