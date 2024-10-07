@@ -147,6 +147,47 @@ nav {
     margin: rem;
 }
 
+/* Cronograma */
+#schedule {
+    padding: 50px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+  }
+  
+  .schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+  }
+  
+  .schedule h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-description {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+  }
+  
+  /* Efeito de zoom ao passar o mouse */
+  .schedule-image:hover {
+    transform: scale(1.05);
+  }
+  
 /* ----------------------------------- */
 /* Seção Entrevistas */
 /* ----------------------------------- */
@@ -278,7 +319,7 @@ iframe {
 /* Seção Livros */
 /* ----------------------------------- */
 
-.books {
+#books {
     margin: 20px;
     text-align: left;
 }
@@ -312,6 +353,7 @@ iframe {
 .book-info h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .book-info p {
