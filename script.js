@@ -15,4 +15,21 @@
 //         }
 //     }
 // });
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Previne o comportamento padrão do link
+      const targetId = this.getAttribute('href');
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+
+  window.addEventListener("scroll", () => {
+    const parallax = document.querySelector(".home");
+    let scrollPosition = window.pageYOffset;
+    parallax.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+});
+
 

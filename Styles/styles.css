@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+html {
+    scroll-behavior: smooth;
+}
+
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,18 +36,18 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     background: #333;
     color: #fff;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
 .logo {
-    position: absolute; 
-    left: 2rem; 
+    position: absolute;
+    left: 2rem;
     display: flex;
     align-items: center;
     z-index: 2;
@@ -41,7 +56,7 @@ header {
 }
 
 .logo img {
-    height: 50px; 
+    height: 50px;
     margin-right: 0.75rem;
 }
 
@@ -49,10 +64,11 @@ header {
     font-size: 1rem;
     font-weight: bold;
 }
- /* Navbar */
+
+/* Navbar */
 nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     width: 100%;
@@ -65,7 +81,7 @@ nav {
 .nav-center {
     flex-grow: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding-left: 270px;
 }
 
@@ -75,7 +91,8 @@ nav {
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* add this line */
+    justify-content: center;
+    /* add this line */
 }
 
 .nav-center ul li {
@@ -105,10 +122,11 @@ nav {
     padding: 20px 0px 0px;
 }
 
-.nav-right p{
+.nav-right p {
     margin-right: 10px;
     font-size: 1rem;
 }
+
 .nav-right a {
     color: #fff;
     text-decoration: none;
@@ -212,7 +230,8 @@ nav {
     flex-direction: row;
     width: 100%;
     align-items: flex-start;
-    margin-bottom: 20px; /* Espaçamento entre as seções */
+    margin-bottom: 20px;
+    /* Espaçamento entre as seções */
 }
 
 .image-container {
@@ -221,15 +240,18 @@ nav {
 }
 
 .image-container img {
-    width: 400px; /* Tamanho das imagens */
+    width: 400px;
+    /* Tamanho das imagens */
     height: auto;
-    border-radius: 8px; /* Bordas arredondadas, opcional */
-    margin-bottom: 10px; 
+    border-radius: 8px;
+    /* Bordas arredondadas, opcional */
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .text-container {
-    flex: 1; /* Ocupa o espaço restante */
+    flex: 1;
+    /* Ocupa o espaço restante */
     text-align: justify;
     margin-left: 20px;
 }
@@ -241,7 +263,8 @@ nav {
     line-height: 1.6;
     margin-bottom: 10px;
     margin-top: 50px;
-    text-indent: 20px; /* Recuo no início do parágrafo para maior legibilidade */
+    text-indent: 20px;
+    /* Recuo no início do parágrafo para maior legibilidade */
 }
 
 
@@ -288,22 +311,24 @@ footer {
     text-align: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
-  }
+}
 
-.sanghas-section h2{
+.sanghas-section h2 {
     margin-bottom: 70px;
 }
-  
-  .sanghas-container {
+
+.sanghas-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espaço entre as Sanghas */
-  }
-  
-  .sangha {
+    gap: 20px;
+    /* Espaço entre as Sanghas */
+}
+
+.sangha {
     display: flex;
-    align-items: flex-start; /* Alinha os itens no topo */
+    align-items: flex-start;
+    /* Alinha os itens no topo */
     flex: 1 1 400px;
     max-width: 600px;
     border: 1px solid #ddd;
@@ -311,29 +336,31 @@ footer {
     padding: 20px;
     background-color: white;
     text-align: left;
-  }
-  
-  .sangha img {
+}
+
+.sangha img {
     max-width: 200px;
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
-  }
-  
-  .sangha-text {
+    margin-right: 20px;
+    /* Espaço entre a imagem e o texto */
+}
+
+.sangha-text {
     display: flex;
-    flex-direction: column; /* Empilha o título e o texto */
-  }
-  
-  .sangha h3 {
+    flex-direction: column;
+    /* Empilha o título e o texto */
+}
+
+.sangha h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-  }
-  
-  .sangha p {
+}
+
+.sangha p {
     font-size: 1em;
     color: #666;
-  }
+}
 
-  .sangha-text button {
+.sangha-text button {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -342,11 +369,13 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     width: 200px;
-    display: block;  /* Certifique-se de que o botão seja um bloco */
-    margin: 10px auto;  /* Centraliza o botão */
+    display: block;
+    /* Certifique-se de que o botão seja um bloco */
+    margin: 10px auto;
+    /* Centraliza o botão */
 }
 
-.sangha-text a{
+.sangha-text a {
     color: black;
     text-decoration: none;
 }
@@ -357,10 +386,14 @@ button:hover {
 
 #form-section {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente se houver altura definida */
-    min-height: 50vh; /* Ajuste conforme necessário */
-    padding: 2rem; /* Adiciona espaçamento ao redor */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente se houver altura definida */
+    min-height: 50vh;
+    /* Ajuste conforme necessário */
+    padding: 2rem;
+    /* Adiciona espaçamento ao redor */
 
 }
 
@@ -372,30 +405,34 @@ button:hover {
     padding: 10px 45px;
     margin-top: -200px;
     background: #1d1d2e;
-    width: 500px; /* Largura do formulário */
-    margin: 0 auto; /* Centraliza o formulário */
+    width: 500px;
+    /* Largura do formulário */
+    margin: 0 auto;
+    /* Centraliza o formulário */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 20px;
 }
 
 
-#formulario h2{
+#formulario h2 {
     color: #f5f5f5;
     font-size: 2.5rem;
     margin: 2rem;
 }
 
-section form{
+section form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-form label{
+
+form label {
     color: #f5f5f5;
     font-size: 17px;
     margin-bottom: 4px;
 }
-form input{
+
+form input {
     padding: 15px;
     outline: none;
     border: 0;
@@ -403,10 +440,12 @@ form input{
     font-size: 15px;
     transition: all 0.5s;
 }
-form input:focus{
+
+form input:focus {
     border-radius: 16px;
 }
-form textarea{
+
+form textarea {
     padding: 10px;
     outline: none;
     border: 0;
@@ -415,10 +454,11 @@ form textarea{
     transition: all 0.5s;
 }
 
-form textarea:focus{
+form textarea:focus {
     border-radius: 16px;
 }
-form button{
+
+form button {
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -428,13 +468,9 @@ form button{
     transition: all 1s;
     margin-bottom: 20px;
 }
-form button:hover{
+
+form button:hover {
     background: #f5f5f5;
     color: #101026;
     border-radius: 16px;
 }
-
-  
-  
-  
-  
