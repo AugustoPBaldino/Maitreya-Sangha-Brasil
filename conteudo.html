@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="Styles/conteudo.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -22,19 +23,14 @@
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#books">Livros</a></li>
                     <li><a href="#interviews">Entrevistas</a></li>
-
                 </ul>
             </div>
             <div class="nav-right">
                 <p>Entre em contato conosco!</p>
-                <a href="https://www.instagram.com/maitreyasanghabr" target="_blank"><img src="assets/instagram (1).png"
-                        alt="Instagram"></a>
-                <a href="https://www.facebook.com/maitreyasanghabr" target="_blank"><img
-                        src="assets/icons8-facebook-novo.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/maitreyasanghabr" target="_blank"><img src="assets/instagram (1).png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/maitreyasanghabr" target="_blank"><img src="assets/icons8-facebook-novo.svg" alt="Facebook"></a>
             </div>
         </nav>
-
-
     </div>
 
     <section id="schedule">
@@ -51,12 +47,8 @@
             <img src="assets/Livro.jpeg" alt="Capa do Livro">
             <div class="book-info">
                 <h2>Os Seis Yogas de Naropa</h2>
-                <p>Considerado o “Rei dos Tratados sobre o Calor Interno”, o Livro de Três Inspirações, de Tsongkhapa, o
-                    Grande, traduzido e comentado por Lama Glenn Mullin, constitui uma das mais admiráveis e completas
-                    obras sobre a tradição dos Seis Yogas e da meditação buddhista tântrica. Agora, disponível em
-                    português, em uma parceria da Maitreya Sangha Brasil com a Editora Bodigaya!</p>
-                <a href="https://bodigaya.com.br/produto/os-seis-yogas-de-naropa-comentario-de-tsongkhapa/"
-                    target="_blank">
+                <p>Considerado o “Rei dos Tratados sobre o Calor Interno”, o Livro de Três Inspirações, de Tsongkhapa, o Grande, traduzido e comentado por Lama Glenn Mullin, constitui uma das mais admiráveis e completas obras sobre a tradição dos Seis Yogas e da meditação buddhista tântrica. Agora, disponível em português, em uma parceria da Maitreya Sangha Brasil com a Editora Bodigaya!</p>
+                <a href="https://bodigaya.com.br/produto/os-seis-yogas-de-naropa-comentario-de-tsongkhapa/" target="_blank">
                     <button>Adquira já o seu!</button>
                 </a>
             </div>
@@ -64,12 +56,12 @@
     </section>
 
     <section id="interviews">
-        <div>
+        <div class="interviews-title">
             <h2>Entrevistas</h2>
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Card 1 -->
+                <!-- Cards de entrevistas aqui -->
                 <div class="swiper-slide card-project">
                     <div class="img-project">
                         <div class="video-container">
@@ -140,13 +132,16 @@
                     <p>como evitar o escapismo espiritual?</p>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
-    <script src="scripts.js"></script>
-</body>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
 </html>
