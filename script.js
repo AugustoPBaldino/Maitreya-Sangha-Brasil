@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1, // Exibe apenas um slide por vez
-    spaceBetween: 0, // Remove qualquer espaço entre os slides
+    spaceBetween: 0,  // Remove o espaço entre os slides
     loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
