@@ -53,16 +53,20 @@ header {
     z-index: 2;
     position: fixed;
     top: 5px;
+    z-index: 3;
+
 }
 
 .logo img {
     height: 50px;
     margin-right: 0.75rem;
+
 }
 
 .logo span {
     font-size: 1rem;
     font-weight: bold;
+
 }
 
 /* Navbar */
@@ -73,9 +77,9 @@ nav {
     padding: 0 20px;
     width: 100%;
     position: fixed;
-    z-index: 1;
-    background-color: #414141;
-    height: 80px;
+    z-index: 2;
+    background-color: #333333;
+    height: 90px;
 }
 
 .nav-center {
@@ -214,52 +218,109 @@ nav {
 /* ----------------------------------- */
 
 
-#interviews {
+#courses {
     padding: 50px 0;
     text-align: center;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: var(--color-light-grey); /* Cor de fundo diferente para diferenciar dos interviews */
+    color: var(--color-dark-grey); /* Cor de texto para o conteúdo do curso */
+    width: 100%;
 }
 
-.interviews-title h2 {
-    font-size: 2rem;
+.courses-title h2 {
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    color: var(--color-dark-blue); /* Cor personalizada para o título da seção */
 }
 
-.card-interview {
+.card-project {
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Alinha verticalmente imagem e texto */
+    justify-content: flex-start; /* Garante que a imagem fique à esquerda */
 }
 
-.card-interview:hover {
+.swiper {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f0f4f8; /* Cor de fundo suave, azul claro */
+    margin: 0 auto; /* Centraliza o swiper na página */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    background-color: white; /* Fundo branco para os slides */
+    border-radius: 15px; /* Borda arredondada para os slides */
+    height: 400px; /* Altura fixa para os cards (ajuste conforme necessário) */
+    overflow: hidden; /* Oculta o conteúdo que transborda */
+    box-sizing: border-box; /* Garante que o padding não cause overflow */
+    margin: 0; /* Remove qualquer margem que possa existir */
+    padding: 0; /* Remove qualquer padding */
+}
+
+.course-info {
+    flex: 1; /* Permite que o conteúdo preencha o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+}
+
+.course-info p {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0 auto 15px; /* Centraliza o bloco do parágrafo e adiciona espaçamento inferior */
+    width: 80%; /* Define a largura do parágrafo */
+    text-align: justify;
+}
+
+
+
+
+.card-project:hover {
     transform: scale(1.05);
 }
 
-.interview-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.interview-content img {
-    width: 100%;
+.card-project img {
+    width: 400px; /* Define um tamanho fixo para a imagem */
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    object-fit: cover;
+    margin-top: 20px;
+
+    /* Remova o margin-bottom para evitar separação vertical */
 }
 
-.interview-content h3 {
+.course-info h2 {
     font-size: 1.5rem;
     margin: 10px 0;
+    color: var(--color-dark-blue);
+    text-align: center;
 }
 
-.interview-content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
+.course-info a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
+
+.course-info button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.course-info button:hover {
+    background-color: #0056b3;
+}
+
 
 
 
@@ -354,68 +415,57 @@ footer {
     padding: 1rem 2rem;
 }
 
-#courses {
-    margin: 20px;
+#interviews {
+    padding: 50px 0;
     text-align: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
-.course-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    background-color: #f9f9f9;
+.interviews-title h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-interview {
+    border-radius: 10px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-.course-card img {
-    width: 300px;
-    border-radius: 10px;
-    object-fit: cover;
+.card-interview:hover {
+    transform: scale(1.05);
 }
 
-.course-info {
-    flex: 1;
+.interview-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.course-info h2 {
+.interview-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.interview-content h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.course-info p {
+.interview-content p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.course-info a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
+.video-container{
+    margin-top: 30px;
 }
 
-.course-info button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.course-info button:hover {
-    background-color: #0056b3;
-}
 
 
 
