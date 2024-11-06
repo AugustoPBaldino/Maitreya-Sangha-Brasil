@@ -455,8 +455,7 @@ form button:hover {
     border-radius: 16px;
 }
 
-/* Ajustes para dispositivos móveis (max-width: 767px) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px) {
      
     #about h2 {
         margin-bottom: 20px;
@@ -513,7 +512,7 @@ form button:hover {
     }
 
     .nav-center ul li a {
-        font-size: 0.3rem;
+        font-size: 0.34rem;
         padding: 0 8px;
     }
 
@@ -566,42 +565,337 @@ form button:hover {
     }
 
     .image-container img {
-        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-        height: auto; /* Mantém a proporção */
+        max-width: 100%; 
+        height: auto; 
     }
 
     #mentor-section p {
-        font-size: 1rem; /* Ajusta o tamanho do texto */
+        font-size: 1rem; 
     }
 
     /* Seção Sangha */
     .sangha {
-        flex-direction: column; /* Alinha os elementos em coluna */
-        align-items: center; /* Centraliza os itens */
-        max-width: 100%; /* Ajusta a largura máxima */
-        height: auto; /* Ajusta a altura */
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%; 
+        height: auto; 
     }
 
     .sangha h3 {
-        font-size: 1.5rem; /* Ajusta o tamanho do título */
-        text-align: center; /* Centraliza o texto */
+        font-size: 1.5rem; 
+        text-align: center; 
     }
 
     .sangha p {
-        font-size: 0.9rem; /* Ajusta o tamanho do texto */
-        text-align: center; /* Centraliza o texto */
-        margin: 0; /* Remove margens */
+        font-size: 0.9rem; 
+        text-align: center; 
+        margin: 0; 
     }
 
     /* Formulário */
     #formulario {
-        padding: 0 15px; /* Ajusta o padding do formulário */
+        padding: 0 15px; 
     }
 
     #formulario h2 {
-        font-size: 1.3rem; /* Ajusta o tamanho do título */
+        font-size: 1.3rem; 
     }
 }
+
+/* Ajuste para telas de 375px */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    #about h2 {
+        margin-bottom: 20px;
+    }
+    #about p {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+     .logo {
+        display: flex;
+        z-index: 2;
+        justify-content: center; 
+        width: 100%;            
+    }
+
+    .logo img {
+        height: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .logo span {
+        font-size: 0.5rem;
+        margin-bottom: 1.5rem;
+        margin-right: 100px;
+    }
+
+     nav {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+        width: 100%;
+        z-index: 1; 
+    }
+
+    .nav-center {
+        padding-left: 0;
+    }
+
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    
+    .nav-center ul li {
+        margin: 0;
+        padding-top: 11rem;
+    }
+
+    .nav-center ul li a {
+        font-size: 0.4rem;
+        padding: 0 8px;
+    }
+
+    .nav-right {
+        width: 100%;               
+        display: flex;
+        justify-content: center;    
+        align-items: center;        
+        margin-bottom: 20px;
+    }
+    
+    .nav-right p {
+        text-align: center;        
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin: 0;               
+    }
+    
+    .nav-right img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .home h1 {
+        font-size: 1.8rem; 
+        margin: 0; 
+    }
+
+    .home p {
+        font-size: 1.2rem; 
+        margin: 0; 
+    }
+
+    .cta-button {
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    #mentor-section {
+        padding: 30px; 
+    }
+
+    .mentor-info {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .image-container {
+        margin: 10px 0; 
+    }
+
+    .image-container img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    #mentor-section p {
+        font-size: 1rem; 
+    }
+
+    /* Seção Sangha */
+    .sangha {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .sangha h3 {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .sangha p {
+        font-size: 0.9rem; 
+        text-align: center; 
+        margin: 0; 
+    }
+
+    /* Formulário */
+    #formulario {
+        padding: 0 15px; 
+    }
+
+    #formulario h2 {
+        font-size: 1.3rem; 
+    }
+}
+
+/* Ajuste para telas de 425px */
+@media only screen and (min-width: 376px) and (max-width: 540px) {
+    #about h2 {
+        margin-bottom: 20px;
+    }
+    #about p {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+     .logo {
+        display: flex;
+        z-index: 2;
+        justify-content: center; 
+        width: 100%;            
+    }
+
+    .logo img {
+        height: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .logo span {
+        font-size: 0.5rem;
+        margin-bottom: 1.5rem;
+        margin-right: 100px;
+    }
+
+     nav {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+        width: 100%;
+        z-index: 1; 
+    }
+
+    .nav-center {
+        padding-left: 0;
+    }
+
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    
+    .nav-center ul li {
+        margin: 0;
+        padding-top: 11rem;
+    }
+
+    .nav-center ul li a {
+        font-size: 0.45rem;
+        padding: 0 8px;
+    }
+
+    .nav-right {
+        width: 100%;               
+        display: flex;
+        justify-content: center;    
+        align-items: center;        
+        margin-bottom: 20px;
+    }
+    
+    .nav-right p {
+        text-align: center;        
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin: 0;               
+    }
+    
+    .nav-right img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .home h1 {
+        font-size: 1.8rem; 
+        margin: 0; 
+    }
+
+    .home p {
+        font-size: 1.2rem; 
+        margin: 0; 
+    }
+
+    .cta-button {
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    #mentor-section {
+        padding: 30px; 
+    }
+
+    .mentor-info {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .image-container {
+        margin: 10px 0; 
+    }
+
+    .image-container img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    #mentor-section p {
+        font-size: 1rem; 
+    }
+
+    /* Seção Sangha */
+    .sangha {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .sangha h3 {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .sangha p {
+        font-size: 0.9rem; 
+        text-align: center; 
+        margin: 0; 
+    }
+
+    /* Formulário */
+    #formulario {
+        padding: 0 15px; 
+    }
+
+    #formulario h2 {
+        font-size: 1.3rem; 
+    }
+}
+
 
 /* Mobile tablet (min-width: 768px) and (max-width: 1440px) */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
@@ -620,12 +914,11 @@ form button:hover {
         text-align: justify;
     }
 
-    /* Centralizar o logo */
     .logo {
         display: flex;
         z-index: 2;
-        justify-content: center; /* Alinha o conteúdo ao centro */
-        width: 100%;            /* Ocupa toda a largura disponível */
+        justify-content: center; 
+        width: 100%;            
     }
 
     .logo img {
@@ -647,7 +940,7 @@ form button:hover {
         align-items: center;
         height: 280px;
         width: 100%;
-        z-index: 1; /* Fica abaixo do logo */
+        z-index: 1; 
     }
 
     .nav-center {
@@ -673,17 +966,17 @@ form button:hover {
     }
 
     .nav-right {
-        width: 100%;                /* Usa 100% para ocupar toda a largura */
+        width: 100%;               
         display: flex;
-        justify-content: center;    /* Centraliza os elementos dentro de nav-right */
-        align-items: center;        /* Alinha verticalmente os elementos, se necessário */
+        justify-content: center;    
+        align-items: center;        
     }
     
     .nav-right p {
-        text-align: center;         /* Centraliza o texto */
+        text-align: center;         
         font-size: 1rem;
         font-weight: bold;
-        margin: 0;                 /* Remove margens se houver */
+        margin: 0;                 
     }
     
     .nav-right img {
@@ -715,18 +1008,18 @@ form button:hover {
     
     .mentor-info {
         display: flex;
-        flex-direction: column;    /* Alinha o texto e a imagem em uma coluna */
-        align-items: center;       /* Centraliza horizontalmente */
-        text-align: center;        /* Centraliza o texto */
+        flex-direction: column;    
+        align-items: center;       
+        text-align: center;        
     }
     
     .image-container {
-        margin: 20px 0;           /* Adiciona margem para espaçamento */
+        margin: 20px 0;           
     }
     
     .image-container img {
-        max-width: 100%;          /* Garante que a imagem não ultrapasse a largura do contêiner */
-        height: auto;             /* Mantém a proporção da imagem */
+        max-width: 100%;          
+        height: auto;             
     }
     
     #mentor-section p {
@@ -738,7 +1031,7 @@ form button:hover {
     .sangha {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; /* Espaço entre o título e o texto */
+        justify-content: space-between; 
         align-items: center;
         max-width: 600px;
         height: 300px;
@@ -746,14 +1039,14 @@ form button:hover {
 
     .sangha h3 {
         text-align: center;
-        margin-top: 10px; /* Remove margem superior extra */
+        margin-top: 10px; 
     }
 
     .sangha p {
         font-size: 1rem;
         text-align: center;
-        margin-bottom: 0; /* Remove margem inferior extra */
-        align-self: flex-end; /* Posiciona o texto na base do container */
+        margin-bottom: 0; 
+        align-self: flex-end; 
     }
 
     /* Formulário */

@@ -466,6 +466,690 @@ footer {
     margin-top: 30px;
 }
 
+/* Ajustes para dispositivos móveis (max-width: 767px) */
+@media only screen and (max-width: 320px) {
+
+    /* Logo */
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+    }
+    .logo span {
+        font-size: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: 280px;
+        padding: 10px;
+        z-index: 2; 
+
+    }
+    .nav-center {
+        padding: 0;
+    }
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .nav-center ul li {
+        margin: 5px 0;
+        padding-top: 11rem;
+    }
+    .nav-center ul li a {
+        font-size: 0.41rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-right p {
+        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .nav-right a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+    }
+    
+    .nav-right img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    /* Schedule Section */
+    #schedule {
+        padding: 30px 10px;
+        margin-top: 6rem;
+    }
+    .schedule-container {
+        padding: 15px;
+    }
+    .schedule h2 {
+        font-size: 1.5rem;
+    }
+    .schedule-description {
+        font-size: 1rem;
+    }
+    .schedule-image {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    /* Courses Section */
+    #courses {
+        padding: 30px 0;
+    }
+    .card-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-project img {
+        width: 90%; /* Ajusta para ocupar a maior parte da largura */
+        margin-top: 10px;
+    }
+    .course-info h2 {
+        font-size: 1.2rem;
+    }
+    .course-info p {
+        font-size: 0.7rem;
+        width: 90%;
+    }
+    .course-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Books Section */
+    #books {
+        padding: 20px 10px;
+    }
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .book-card img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .book-info h2 {
+        font-size: 1.3rem;
+    }
+    .book-info p {
+        font-size: 0.7rem;
+    }
+    .book-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Interviews Section */
+    #interviews {
+        padding: 50px 0;
+        text-align: center;
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+    
+    .interviews-title h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .card-interview {
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+    
+    .card-interview:hover {
+        transform: scale(1.05);
+    }
+    
+    .interview-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .interview-content img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+    
+    .interview-content h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    
+    .interview-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+    .video-container{
+        margin-top: 30px;
+    }
+
+    .card-project {
+        border-radius: 10px;
+        transition: transform 0.3s;
+        display: flex;
+        gap: 20px;
+        align-items: center; /* Alinha verticalmente imagem e texto */
+        justify-content: flex-start; /* Garante que a imagem fique à esquerda */
+    }
+    
+    .swiper {
+        width: 100%;
+        border-radius: 20px;
+        background-color: #f0f4f8; /* Cor de fundo suave, azul claro */
+        margin: 0 auto; /* Centraliza o swiper na página */
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Alinha o conteúdo ao topo */
+        background-color: white; /* Fundo branco para os slides */
+        border-radius: 15px; /* Borda arredondada para os slides */
+        height: 100px; /* Altura fixa para os cards (ajuste conforme necessário) */
+        overflow: hidden; /* Oculta o conteúdo que transborda */
+        box-sizing: border-box; /* Garante que o padding não cause overflow */
+        margin: 0; /* Remove qualquer margem que possa existir */
+        padding: 0; /* Remove qualquer padding */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px){
+      /* Logo */
+      .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+    }
+    .logo span {
+        font-size: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: 280px;
+        padding: 10px;
+        z-index: 2; 
+
+    }
+    .nav-center {
+        padding: 0;
+    }
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .nav-center ul li {
+        margin: 5px 0;
+        padding-top: 11rem;
+    }
+    .nav-center ul li a {
+        font-size: 0.53rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-right p {
+        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .nav-right a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+    }
+    
+    .nav-right img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    /* Schedule Section */
+   
+    .schedule-container {
+        margin-top: 90px;
+
+    }
+    .schedule h2 {
+        font-size: 1.5rem;
+        margin-top: 90px;
+
+    }
+    .schedule-description {
+        font-size: 1rem;
+    }
+    .schedule-image {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    /* Courses Section */
+    #courses {
+        padding: 30px 0;
+    }
+    .card-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-project img {
+        width: 90%; /* Ajusta para ocupar a maior parte da largura */
+        margin-top: 10px;
+    }
+    .course-info h2 {
+        font-size: 1.2rem;
+    }
+    .course-info p {
+        font-size: 0.7rem;
+        width: 90%;
+    }
+    .course-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Books Section */
+    #books {
+        padding: 20px 10px;
+    }
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .book-card img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .book-info h2 {
+        font-size: 1.3rem;
+    }
+    .book-info p {
+        font-size: 0.7rem;
+    }
+    .book-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Interviews Section */
+    #interviews {
+        padding: 30px 10px;
+    }
+    .interview-content img {
+        width: 10%;
+        margin: 10px 0;
+    }
+    .interview-content h3 {
+        font-size: 1.2rem;
+    }
+    .interview-content p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 540px){
+      /* Logo */
+      .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+    }
+    .logo span {
+        font-size: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: 280px;
+        padding: 10px;
+        z-index: 2; 
+
+    }
+    .nav-center {
+        padding: 0;
+    }
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .nav-center ul li {
+        margin: 5px 0;
+        padding-top: 11rem;
+    }
+    .nav-center ul li a {
+        font-size: 0.61rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-right p {
+        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .nav-right a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+    }
+    
+    .nav-right img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    /* Schedule Section */
+    #schedule {
+        padding: 20px 10px;
+        margin-top: 7rem;
+
+    }
+    .schedule-container {
+        padding: 15px;
+    }
+    .schedule h2 {
+        font-size: 1.5rem;
+    }
+    .schedule-description {
+        font-size: 1rem;
+    }
+    .schedule-image {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    /* Courses Section */
+    #courses {
+        padding: 30px 0;
+    }
+    .card-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-project img {
+        width: 90%; /* Ajusta para ocupar a maior parte da largura */
+        margin-top: 10px;
+    }
+    .course-info h2 {
+        font-size: 1.2rem;
+    }
+    .course-info p {
+        font-size: 0.7rem;
+        width: 90%;
+    }
+    .course-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Books Section */
+    #books {
+        padding: 20px 10px;
+    }
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .book-card img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .book-info h2 {
+        font-size: 1.3rem;
+    }
+    .book-info p {
+        font-size: 0.7rem;
+    }
+    .book-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Interviews Section */
+    #interviews {
+        padding: 30px 10px;
+    }
+    .interview-content img {
+        width: 10%;
+        margin: 10px 0;
+    }
+    .interview-content h3 {
+        font-size: 1.2rem;
+    }
+    .interview-content p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+      /* Logo */
+      .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+    }
+    .logo span {
+        font-size: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: 280px;
+        padding: 10px;
+        z-index: 2; 
+
+    }
+    .nav-center {
+        padding: 0;
+    }
+    .nav-center ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .nav-center ul li {
+        margin: 5px 0;
+        padding-top: 11rem;
+    }
+    .nav-center ul li a {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-right p {
+        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .nav-right a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+    }
+    
+    .nav-right img {
+        height: 30px; /* Ajuste menor para telas pequenas */
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    /* Schedule Section */
+    #schedule {
+        padding: 20px 10px;
+    }
+    .schedule-container {
+        padding: 15px;
+    }
+    .schedule h2 {
+        font-size: 1.5rem;
+    }
+    .schedule-description {
+        font-size: 1rem;
+    }
+    .schedule-image {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    /* Courses Section */
+    #courses {
+        padding: 30px 0;
+    }
+    .card-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-project img {
+        width: 90%; /* Ajusta para ocupar a maior parte da largura */
+        margin-top: 10px;
+    }
+    .course-info h2 {
+        font-size: 1.2rem;
+    }
+    .course-info p {
+        font-size: 0.7rem;
+        width: 90%;
+    }
+    .course-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Books Section */
+    #books {
+        padding: 20px 10px;
+    }
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .book-card img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .book-info h2 {
+        font-size: 1.3rem;
+    }
+    .book-info p {
+        font-size: 0.7rem;
+    }
+    .book-info button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Interviews Section */
+    #interviews {
+        padding: 30px 10px;
+    }
+    .interview-content img {
+        width: 10%;
+        margin: 10px 0;
+    }
+    .interview-content h3 {
+        font-size: 1.2rem;
+    }
+    .interview-content p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 
 
