@@ -44,6 +44,11 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    color: inherit;             /* Mantém a cor do elemento pai */
+    text-decoration: none;      /* Remove o sublinhado */
+}
+
 /* Logo */
 .logo {
     position: absolute;
@@ -75,7 +80,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 1;
-    background-color: #333333a9;
+    background-color: #333333e0;
     height: 80px;
 }
 
@@ -760,7 +765,15 @@ form button:hover {
         padding: 0;
     }
 
-     .logo {
+    a .logo span{
+        color: white;          /* Herdar a cor do elemento pai */
+        text-decoration: none;   /* Remove o sublinhado */
+        cursor: default;         /* Define o cursor padrão */
+        outline: none;           /* Remove a borda ao focar */
+        display: block;          /* Garante que o link ocupe a área total do conteúdo */
+    }
+    
+    .logo {
         display: flex;
         z-index: 2;
         justify-content: center; 
