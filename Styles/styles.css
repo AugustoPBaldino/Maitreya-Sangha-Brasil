@@ -201,6 +201,7 @@ nav {
     padding: 100px;
     align-items: center;
     font-size: 25px;
+    text-align: justify;
 }
 
 /* ----------------------------------- */
@@ -263,6 +264,7 @@ nav {
     margin-bottom: 10px;
     margin-top: 50px;
     text-indent: 20px;
+    text-align: justify;
 }
 
 
@@ -342,6 +344,7 @@ footer {
 .sangha-text {
     display: flex;
     flex-direction: column;
+    
 }
 
 .sangha h3 {
@@ -352,6 +355,8 @@ footer {
 .sangha p {
     font-size: 1em;
     color: #666;
+    text-align: justify;
+
 }
 
 .sangha-text button {
@@ -517,7 +522,7 @@ form button:hover {
     }
 
     .nav-center ul li a {
-        font-size: 0.34rem;
+        font-size: 0.28rem;
         padding: 0 8px;
     }
 
@@ -664,7 +669,7 @@ form button:hover {
     }
 
     .nav-center ul li a {
-        font-size: 0.4rem;
+        font-size: 0.33rem;
         padding: 0 8px;
     }
 
@@ -755,7 +760,7 @@ form button:hover {
 }
 
 /* Ajuste para telas de 425px */
-@media only screen and (min-width: 376px) and (max-width: 540px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
     #about h2 {
         margin-bottom: 20px;
     }
@@ -819,7 +824,7 @@ form button:hover {
     }
 
     .nav-center ul li a {
-        font-size: 0.45rem;
+        font-size: 0.4rem;
         padding: 0 8px;
     }
 
