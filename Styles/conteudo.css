@@ -26,7 +26,6 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Cabeçalho */
@@ -46,9 +45,7 @@ header {
 
 a {
     color: inherit;
-    /* Mantém a cor do elemento pai */
     text-decoration: none;
-    /* Remove o sublinhado */
 }
 
 /* Logo */
@@ -103,7 +100,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* add this line */
 }
 
 .nav-center ul li {
@@ -123,8 +119,6 @@ nav {
 
 .nav-center ul li a:hover {
     background: #406399;
-    /* background: #DD3117; */
-
 }
 
 .nav-right {
@@ -153,7 +147,6 @@ nav {
 
 .nav-center ul li a:hover {
     background: #406399;
-    /* background: #DD3117; */
     border-radius: 25px;
 }
 
@@ -173,16 +166,11 @@ nav {
     margin-right: 1rem;
 }
 
-.nav-right img {
-    width: 50px;
-    height: 50px;
-    margin: rem;
-}
+
 
 /* Cronograma */
 #schedule {
     padding: 50px 20px;
-    /* background-color: #f9f9f9; */
     text-align: center;
 }
 
@@ -190,8 +178,6 @@ nav {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    /* background-color: #fff; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
 }
 
@@ -215,137 +201,111 @@ nav {
     padding: 10px;
 }
 
-/* Efeito de zoom ao passar o mouse */
 .schedule-image:hover {
     transform: scale(1.05);
 }
 
-/* ----------------------------------- */
-/* Seção Entrevistas */
-/* ----------------------------------- */
 
-
+/* Estilos da seção "Cursos" */
 #courses {
-    padding: 50px 0;
-    text-align: center;
-    background-color: var(--color-light-grey);
-    /* Cor de fundo diferente para diferenciar dos interviews */
-    color: var(--color-dark-grey);
-    /* Cor de texto para o conteúdo do curso */
-    width: 100%;
+    padding: 2rem 1rem;
+    background-color: #fff;
 }
 
 .courses-title h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: var(--color-dark-blue);
-    /* Cor personalizada para o título da seção */
-}
-
-.card-project {
-    border-radius: 10px;
-    transition: transform 0.3s;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    /* Alinha verticalmente imagem e texto */
-    justify-content: flex-start;
-    /* Garante que a imagem fique à esquerda */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
 }
 
 .swiper {
     width: 100%;
-    border-radius: 20px;
-    background-color: #f0f4f8;
-    /* Cor de fundo suave, azul claro */
+    max-width: 1500px;
     margin: 0 auto;
-    /* Centraliza o swiper na página */
+    padding: 1rem 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
 }
 
 .swiper-slide {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* Alinha o conteúdo ao topo */
-    background-color: white;
-    /* Fundo branco para os slides */
-    border-radius: 15px;
-    /* Borda arredondada para os slides */
-    height: 400px;
-    /* Altura fixa para os cards (ajuste conforme necessário) */
-    overflow: hidden;
-    /* Oculta o conteúdo que transborda */
-    box-sizing: border-box;
-    /* Garante que o padding não cause overflow */
-    margin: 0;
-    /* Remove qualquer margem que possa existir */
-    padding: 0;
-    /* Remove qualquer padding */
-}
-
-.course-info {
-    flex: 1;
-    /* Permite que o conteúdo preencha o espaço restante */
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* Garante que o conteúdo comece do topo */
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.course-info p {
-    font-size: 1.4rem;
-    color: #555;
-    margin: 0 auto 15px;
-    /* Centraliza o bloco do parágrafo e adiciona espaçamento inferior */
-    width: 80%;
-    /* Define a largura do parágrafo */
-    text-align: justify;
-}
-
-
-
-
-.card-project:hover {
-    transform: scale(1.05);
+.swiper-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-project img {
-    width: 400px;
-    /* Define um tamanho fixo para a imagem */
-    height: auto;
-    border-radius: 10px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
-    margin-top: 20px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
 
-    /* Remova o margin-bottom para evitar separação vertical */
+
+.course-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .course-info h2 {
     font-size: 1.5rem;
-    margin: 10px 0;
-    color: var(--color-dark-blue);
-    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.course-info a {
-    text-decoration: none;
-    display: flex;
+.course-info p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    text-align: center;
     justify-content: center;
 }
 
 .course-info button {
-    background-color: #007bff;
+    background-color: #ff5722;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 0.75rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .course-info button:hover {
-    background-color: #0056b3;
+    background-color: #e64a19;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff5722;
+    transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #e64a19;
 }
 
 
@@ -358,29 +318,23 @@ nav {
 #books {
     margin: 20px;
     text-align: center;
-    /* Centraliza o texto dentro da seção */
 }
 
 .book-card {
     display: flex;
-    /* Exibe o conteúdo em uma linha */
     align-items: flex-start;
-    /* Alinha a imagem e o texto ao topo */
     gap: 20px;
-    /* Espaçamento entre a imagem e o texto */
     background-color: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     max-width: 800px;
-    /* Limita a largura total do card */
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .book-card img {
     width: 300px;
-    /* Define a largura da imagem */
     border-radius: 10px;
     object-fit: cover;
 }
@@ -409,9 +363,7 @@ nav {
 .book-info a {
     text-decoration: none;
     display: flex;
-    /* Adiciona flexbox ao link para centralizar o botão */
     justify-content: center;
-    /* Centraliza o botão horizontalmente */
 }
 
 .book-info button {
@@ -496,7 +448,6 @@ footer {
 /* Ajustes para dispositivos móveis (max-width: 767px) */
 @media only screen and (max-width: 320px) {
 
-    /* Logo */
     .logo {
         display: flex;
         justify-content: center;
@@ -505,7 +456,6 @@ footer {
 
     .logo img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
     }
 
     .logo span {
@@ -513,7 +463,6 @@ footer {
         margin-right: 5rem;
     }
 
-    /* Navbar */
     nav {
         flex-direction: column;
         height: 280px;
@@ -563,12 +512,10 @@ footer {
 
     .nav-right img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
         width: 30px;
         margin: 0 5px;
     }
 
-    /* Schedule Section */
     #schedule {
         padding: 30px 10px;
         margin-top: 6rem;
@@ -592,7 +539,6 @@ footer {
         margin: 10px 0;
     }
 
-    /* Courses Section */
     #courses {
         padding: 30px 0;
     }
@@ -604,7 +550,6 @@ footer {
 
     .card-project img {
         width: 90%;
-        /* Ajusta para ocupar a maior parte da largura */
         margin-top: 10px;
     }
 
@@ -622,7 +567,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Books Section */
     #books {
         padding: 20px 10px;
     }
@@ -651,7 +595,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Interviews Section */
     #interviews {
         padding: 50px 0;
         text-align: center;
@@ -708,42 +651,29 @@ footer {
         display: flex;
         gap: 20px;
         align-items: center;
-        /* Alinha verticalmente imagem e texto */
         justify-content: flex-start;
-        /* Garante que a imagem fique à esquerda */
     }
 
     .swiper {
         width: 100%;
         border-radius: 20px;
         background-color: #f0f4f8;
-        /* Cor de fundo suave, azul claro */
         margin: 0 auto;
-        /* Centraliza o swiper na página */
     }
 
     .swiper-slide {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        /* Alinha o conteúdo ao topo */
         background-color: white;
-        /* Fundo branco para os slides */
         border-radius: 15px;
-        /* Borda arredondada para os slides */
         height: 100px;
-        /* Altura fixa para os cards (ajuste conforme necessário) */
         overflow: hidden;
-        /* Oculta o conteúdo que transborda */
         box-sizing: border-box;
-        /* Garante que o padding não cause overflow */
         margin: 0;
-        /* Remove qualquer margem que possa existir */
         padding: 0;
-        /* Remove qualquer padding */
     }
 
-    /* Footer */
     footer {
         font-size: 0.9rem;
     }
@@ -751,7 +681,6 @@ footer {
 
 @media only screen and (min-width: 321px) and (max-width: 375px) {
 
-    /* Logo */
     .logo {
         display: flex;
         justify-content: center;
@@ -760,7 +689,6 @@ footer {
 
     .logo img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
     }
 
     .logo span {
@@ -768,7 +696,6 @@ footer {
         margin-right: 5rem;
     }
 
-    /* Navbar */
     nav {
         flex-direction: column;
         height: 280px;
@@ -818,12 +745,9 @@ footer {
 
     .nav-right img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
         width: 30px;
         margin: 0 5px;
     }
-
-    /* Schedule Section */
 
     .schedule-container {
         margin-top: 90px;
@@ -846,7 +770,6 @@ footer {
         margin: 10px 0;
     }
 
-    /* Courses Section */
     #courses {
         padding: 30px 0;
     }
@@ -858,7 +781,6 @@ footer {
 
     .card-project img {
         width: 90%;
-        /* Ajusta para ocupar a maior parte da largura */
         margin-top: 10px;
     }
 
@@ -876,7 +798,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Books Section */
     #books {
         padding: 20px 10px;
     }
@@ -905,7 +826,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Interviews Section */
     #interviews {
         padding: 30px 10px;
     }
@@ -923,7 +843,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Footer */
     footer {
         font-size: 0.9rem;
     }
@@ -931,7 +850,6 @@ footer {
 
 @media only screen and (min-width: 376px) and (max-width: 540px) {
 
-    /* Logo */
     .logo {
         display: flex;
         justify-content: center;
@@ -940,7 +858,6 @@ footer {
 
     .logo img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
     }
 
     .logo span {
@@ -948,7 +865,6 @@ footer {
         margin-right: 5rem;
     }
 
-    /* Navbar */
     nav {
         flex-direction: column;
         height: 280px;
@@ -998,12 +914,10 @@ footer {
 
     .nav-right img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
         width: 30px;
         margin: 0 5px;
     }
 
-    /* Schedule Section */
     #schedule {
         padding: 20px 10px;
         margin-top: 7rem;
@@ -1028,7 +942,6 @@ footer {
         margin: 10px 0;
     }
 
-    /* Courses Section */
     #courses {
         padding: 30px 0;
     }
@@ -1040,7 +953,6 @@ footer {
 
     .card-project img {
         width: 90%;
-        /* Ajusta para ocupar a maior parte da largura */
         margin-top: 10px;
     }
 
@@ -1058,7 +970,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Books Section */
     #books {
         padding: 20px 10px;
     }
@@ -1087,7 +998,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Interviews Section */
     #interviews {
         padding: 30px 10px;
     }
@@ -1105,7 +1015,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Footer */
     footer {
         font-size: 0.9rem;
     }
@@ -1113,7 +1022,6 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
 
-    /* Logo */
     .logo {
         display: flex;
         justify-content: center;
@@ -1122,7 +1030,6 @@ footer {
 
     .logo img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
     }
 
     .logo span {
@@ -1130,7 +1037,6 @@ footer {
         margin-right: 5rem;
     }
 
-    /* Navbar */
     nav {
         flex-direction: column;
         height: 280px;
@@ -1180,12 +1086,10 @@ footer {
 
     .nav-right img {
         height: 30px;
-        /* Ajuste menor para telas pequenas */
         width: 30px;
         margin: 0 5px;
     }
 
-    /* Schedule Section */
     #schedule {
         padding: 20px 10px;
     }
@@ -1208,7 +1112,6 @@ footer {
         margin: 10px 0;
     }
 
-    /* Courses Section */
     #courses {
         padding: 30px 0;
     }
@@ -1220,7 +1123,6 @@ footer {
 
     .card-project img {
         width: 90%;
-        /* Ajusta para ocupar a maior parte da largura */
         margin-top: 10px;
     }
 
@@ -1238,7 +1140,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Books Section */
     #books {
         padding: 20px 10px;
     }
@@ -1267,7 +1168,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Interviews Section */
     #interviews {
         padding: 30px 10px;
     }
@@ -1285,7 +1185,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Footer */
     footer {
         font-size: 0.9rem;
     }
