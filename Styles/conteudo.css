@@ -293,6 +293,16 @@ nav {
     transition: background-color 0.3s ease;
 }
 
+button.encerrado {
+    color: rgb(3, 3, 3); 
+    background-color: #585351;
+    pointer-events: none; 
+    cursor: default; 
+    font-style: italic; 
+    opacity: 0.7; 
+}
+
+
 .course-info button:hover {
     background-color: #e64a19;
 }
