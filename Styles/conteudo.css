@@ -205,6 +205,17 @@ nav {
     transform: scale(1.05);
 }
 
+.custom-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .custom-link:hover {
+    color: darkblue;
+    text-decoration: underline;
+  }
 
 /* Estilos da seção "Cursos" */
 #courses {
